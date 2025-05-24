@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": 1747804604.2982526,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the height of Mount Everest', entities=['height', 'Everest'], tool_hint='websearch', tags=[], selected_servers=['documents', 'websearch'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747804605.0935934,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the height of Mount Everest', entities=['height', 'Mount Everest'], tool_hint='websearch', tags=[], selected_servers=['documents', 'websearch'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Mount Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Mount Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747804606.2801611,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the height of Mount Everest', entities=['height', 'Mount Everest'], tool_hint='websearch', tags=[], selected_servers=['documents', 'websearch'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Mount Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the height of Mount Everest",
+        "entities": [
+          "height",
+          "Mount Everest"
+        ],
+        "tool_hint": "websearch",
+        "tags": [],
+        "selected_servers": [
+          "documents",
+          "websearch"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "timestamp": 1747887914.5208085,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the price of a DLF apartment purchased by Anmol Singh via Capbridge.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge'], tool_hint='document search', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the price of a DLF apartment purchased by Anmol Singh via Capbridge.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge"
+        ],
+        "tool_hint": "document search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the price of a DLF apartment purchased by Anmol Singh via Capbridge.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge"
+        ],
+        "tool_hint": "document search",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887916.0506852,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887926.152253,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': \"FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False\"}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887927.0951073,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the amount Anmol Singh paid for a DLF apartment via Capbridge.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge', 'amount'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the amount Anmol Singh paid for a DLF apartment via Capbridge.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the amount Anmol Singh paid for a DLF apartment via Capbridge.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887928.6983268,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887936.4137256,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': \"FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False\"}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887937.3142812,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Extract a specific financial transaction detail (amount paid) related to a property purchase.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge', 'amount paid'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Extract a specific financial transaction detail (amount paid) related to a property purchase.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount paid"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Extract a specific financial transaction detail (amount paid) related to a property purchase.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount paid"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887938.7346468,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747887945.4927866,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': \"FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False\"}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge price\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text='ERROR: Failed to search: 404 Client Error: Not Found for url: http://localhost:11434/api/embeddings', annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]

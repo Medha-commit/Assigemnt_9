@@ -1,0 +1,244 @@
+[
+  {
+    "timestamp": 1747894333.860645,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the amount Anmol Singh paid for a DLF apartment via Capbridge using local documents.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge', 'amount'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the amount Anmol Singh paid for a DLF apartment via Capbridge using local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the amount Anmol Singh paid for a DLF apartment via Capbridge using local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894335.4965634,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894342.3965273,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type=\\'text\\', text=\"ERROR: Failed to search: HTTPConnectionPool(host=\\'localhost\\', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError(\\'<urllib3.connection.HTTPConnection object at 0x0000017DC6CBD6A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\\'))\", annotations=None)] isError=False'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text=\"ERROR: Failed to search: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017DC6CBD6A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\", annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894343.2800267,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Find the amount Anmol Singh paid for his DLF apartment via Capbridge using local documents.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge', 'amount'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Find the amount Anmol Singh paid for his DLF apartment via Capbridge using local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Find the amount Anmol Singh paid for his DLF apartment via Capbridge using local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894344.9029622,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    # FUNCTION_CALL: 1\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894352.020316,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type=\\'text\\', text=\"ERROR: Failed to search: HTTPConnectionPool(host=\\'localhost\\', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError(\\'<urllib3.connection.HTTPConnection object at 0x0000015ADFFBD6A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\\'))\", annotations=None)] isError=False'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    # FUNCTION_CALL: 1\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text=\"ERROR: Failed to search: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015ADFFBD6A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\", annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894352.8779292,
+    "type": "tool_output",
+    "text": "Output of perception: {'result': PerceptionResult(intent='Extract information about a payment from local documents.', entities=['Anmol Singh', 'DLF apartment', 'Capbridge', 'amount', 'local documents'], tool_hint='documents', tags=[], selected_servers=['documents'])}",
+    "tool_name": "perception",
+    "tool_args": {
+      "perception": {
+        "intent": "Extract information about a payment from local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount",
+          "local documents"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "tool_result": {
+      "result": {
+        "intent": "Extract information about a payment from local documents.",
+        "entities": [
+          "Anmol Singh",
+          "DLF apartment",
+          "Capbridge",
+          "amount",
+          "local documents"
+        ],
+        "tool_hint": "documents",
+        "tags": [],
+        "selected_servers": [
+          "documents"
+        ]
+      }
+    },
+    "final_answer": null,
+    "tags": [
+      "perception"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894354.6046138,
+    "type": "tool_output",
+    "text": "Output of plan: {'result': 'async def solve():\\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool(\\'search_stored_documents\\', input)\"\"\"\\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\\n    result = await mcp.call_tool(\\'search_stored_documents\\', input)\\n\\n    # FURTHER_PROCESSING_REQUIRED\\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\"'}",
+    "tool_name": "plan",
+    "tool_args": {
+      "plan": "async def solve():\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "async def solve():\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "final_answer": null,
+    "tags": [
+      "plan"
+    ],
+    "success": true,
+    "metadata": {}
+  },
+  {
+    "timestamp": 1747894361.4381192,
+    "type": "tool_output",
+    "text": "Output of solve_sandbox: {'result': 'FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type=\\'text\\', text=\"ERROR: Failed to search: HTTPConnectionPool(host=\\'localhost\\', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError(\\'<urllib3.connection.HTTPConnection object at 0x00000201CEB516A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\\'))\", annotations=None)] isError=False'}",
+    "tool_name": "solve_sandbox",
+    "tool_args": {
+      "plan": "async def solve():\n    \"\"\"Search documents to get relevant extracts. Usage: input={\"input\": {\"query\": \"your query\"}} result = await mcp.call_tool('search_stored_documents', input)\"\"\"\n    input = {\"input\": {\"query\": \"Anmol Singh DLF apartment Capbridge payment amount\"}}\n    result = await mcp.call_tool('search_stored_documents', input)\n\n    # FURTHER_PROCESSING_REQUIRED\n    return f\"FURTHER_PROCESSING_REQUIRED: {result}\""
+    },
+    "tool_result": {
+      "result": "FURTHER_PROCESSING_REQUIRED: meta=None content=[TextContent(type='text', text=\"ERROR: Failed to search: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/embeddings (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000201CEB516A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))\", annotations=None)] isError=False"
+    },
+    "final_answer": null,
+    "tags": [
+      "sandbox"
+    ],
+    "success": true,
+    "metadata": {}
+  }
+]
